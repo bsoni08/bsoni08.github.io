@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="In clinical oncology, data silos are the norm. FAIR principles offer a path forward for translational discovery.">
+    <meta name="author" content="Bhavesh Soni">
+
+    <title>Why FAIR Data Principles Matter — Bhavesh Soni</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Bhavesh Soni</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="about.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="intro-header" style="background-image: url('img/post-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Why FAIR Data Principles Matter for Clinical Oncology Research</h1>
+                        <h2 class="subheading">Data silos are the norm in clinical oncology. FAIR principles offer a path forward.</h2>
+                        <span class="meta">Posted by <a href="about.html">Bhavesh Soni</a> on May 2025 &nbsp;&middot;&nbsp; 8 min read</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+                    <h2 class="section-heading">The Problem with Clinical Data Silos</h2>
+
+                    <p>Every clinical trial generates a wealth of data — genomic profiles, imaging, lab values, outcomes — yet the vast majority of this information never leaves the sponsor's data warehouse. Even within the same organisation, datasets collected years apart often use incompatible schemas, different controlled vocabularies, and undocumented preprocessing steps that make any cross-trial analysis extraordinarily difficult.</p>
+
+                    <p>The result? Redundant experiments, slow meta-analyses, and missed opportunities to identify biomarkers that only become apparent when you pool samples across studies. For cancer immunotherapy in particular — where patient cohorts are inherently small — this fragmentation is a serious obstacle.</p>
+
+                    <h2 class="section-heading">What FAIR Actually Means</h2>
+
+                    <p>The FAIR principles, first articulated by Wilkinson et al. in 2016, provide a framework for making data more useful to both humans and machines:</p>
+
+                    <ul>
+                        <li><strong>Findable:</strong> Assign persistent, globally unique identifiers (DOIs, accession numbers) and register datasets in searchable repositories.</li>
+                        <li><strong>Accessible:</strong> Ensure data can be retrieved via open, free, and universally implementable protocols — with clear authentication and authorisation rules where required.</li>
+                        <li><strong>Interoperable:</strong> Use community-agreed ontologies (SNOMED CT, HPO, HUGO gene symbols) so datasets can be integrated without hand-coded mappings.</li>
+                        <li><strong>Reusable:</strong> Attach rich provenance metadata, data dictionaries, and clear licences so future analysts can understand the context and conditions of reuse.</li>
+                    </ul>
+
+                    <h2 class="section-heading">Applying FAIR to Clinical Oncology</h2>
+
+                    <p>In practice, making translational oncology data FAIR involves several interconnected steps. At Roche, our team has focused on building CDISC SDTM / ADaM-compliant datasets as a baseline — these regulatory standards provide a shared schema that is already widely understood across the industry.</p>
+
+                    <p>On top of that, we layer structured metadata using community ontologies: tumor types are annotated with NCI Thesaurus codes, genes use HGNC symbols, and sample collection protocols are described in enough detail to assess comparability across cohorts.</p>
+
+                    <p>The payoff is real: when a new trial dataset lands in our warehouse, analysts can ask cross-trial questions within days rather than months. Biomarker hypotheses that would have required a bespoke data harmonisation project can be explored quickly, and the results are reproducible because the provenance is documented.</p>
+
+                    <blockquote>The data you can't find is the data you can't use. The data you can't integrate is the data you can't learn from.</blockquote>
+
+                    <h2 class="section-heading">The Road Ahead</h2>
+
+                    <p>FAIR is a journey, not a destination. Many organisations are still at the beginning — with legacy datasets that predate any metadata standards and pipelines that were never designed for reuse. Getting there requires both technical investment (ontology mapping, metadata tooling, versioned data lakes) and cultural change (treating data documentation as a first-class deliverable, not an afterthought).</p>
+
+                    <p>But the direction is clear. As multi-modal datasets grow larger and machine learning becomes more deeply embedded in translational workflows, the value of well-structured, interoperable data will only increase. The teams that invest in FAIR practices now will have a significant head start in the era of real-world evidence and AI-assisted drug development.</p>
+
+                    <p><a href="index.html">&larr; Back to Blog</a></p>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://www.linkedin.com/in/bsoni08/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/bsoni08" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Bhavesh Soni 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

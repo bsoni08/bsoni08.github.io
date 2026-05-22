@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project — Bhavesh Soni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .coming-soon {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .coming-soon-label {
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    .coming-soon-title {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+    .coming-soon-sub {
+      color: var(--muted);
+      font-size: 0.97rem;
+      max-width: 420px;
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+    }
+    .blink {
+      animation: blink 1.2s step-end infinite;
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">bhaveshsoni.com</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#experience">Experience</a></li>
+    <li><a href="index.html#skills">Skills</a></li>
+    <li><a href="index.html#publications">Publications</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="coming-soon">
+  <p class="coming-soon-label">// Project</p>
+  <h1 class="coming-soon-title">Coming Soon<span class="blink">_</span></h1>
+  <p class="coming-soon-sub">
+    Something is being built here. Check back soon for updates on ongoing research and open-source tools.
+  </p>
+  <a href="index.html" class="btn btn-outline">← Back to portfolio</a>
+</div>
+
+<footer>
+  <p>Bhavesh Soni &nbsp;·&nbsp; bhaveshsoni.com &nbsp;·&nbsp; Built with plain HTML &amp; CSS</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

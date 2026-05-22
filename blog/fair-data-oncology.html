@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why FAIR Data Principles Matter for Clinical Oncology Research — Bhavesh Soni</title>
+  <meta name="description" content="In clinical oncology, data silos are the norm. FAIR principles offer a path forward for translational discovery." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">bhaveshsoni.com</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../index.html#experience">Experience</a></li>
+    <li><a href="../index.html#skills">Skills</a></li>
+    <li><a href="../index.html#publications">Publications</a></li>
+    <li><a href="../project.html">Projects</a></li>
+    <li><a href="../blog.html">Blog</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="post-header">
+  <a href="../blog.html" class="post-back">← Back to Blog</a>
+  <div class="post-meta">
+    <span>May 2026</span>
+    <span>8 min read</span>
+    <span>FAIR Data · Clinical Trials</span>
+  </div>
+  <h1 class="post-title">Why FAIR Data Principles Matter for Clinical Oncology Research</h1>
+  <p class="post-subtitle">
+    In clinical oncology, data silos are the norm — each trial produces datasets locked away
+    in proprietary formats. FAIR principles offer a path forward.
+  </p>
+</div>
+
+<div class="post-body">
+
+  <h2>The Problem with Clinical Data Silos</h2>
+  <p>
+    Every clinical trial generates a wealth of data — genomic profiles, imaging, lab values,
+    outcomes — yet the vast majority of this information never leaves the sponsor's data warehouse.
+    Even within the same organisation, datasets collected years apart often use incompatible schemas,
+    different controlled vocabularies, and undocumented preprocessing steps that make any
+    cross-trial analysis extraordinarily difficult.
+  </p>
+  <p>
+    The result? Redundant experiments, slow meta-analyses, and missed opportunities to identify
+    biomarkers that only become apparent when you pool samples across studies. For cancer
+    immunotherapy in particular — where patient cohorts are inherently small — this fragmentation
+    is a serious obstacle.
+  </p>
+
+  <h2>What FAIR Actually Means</h2>
+  <p>
+    The FAIR principles, first articulated by Wilkinson et al. in 2016, provide a framework
+    for making data more useful to both humans and machines:
+  </p>
+  <ul>
+    <li><strong>Findable:</strong> Assign persistent, globally unique identifiers (DOIs, accession numbers) and register datasets in searchable repositories.</li>
+    <li><strong>Accessible:</strong> Ensure data can be retrieved via open, free, and universally implementable protocols — with clear authentication and authorisation rules where required.</li>
+    <li><strong>Interoperable:</strong> Use community-agreed ontologies (SNOMED CT, HPO, HUGO gene symbols) so datasets can be integrated without hand-coded mappings.</li>
+    <li><strong>Reusable:</strong> Attach rich provenance metadata, data dictionaries, and clear licences so future analysts can understand the context and conditions of reuse.</li>
+  </ul>
+
+  <h2>Applying FAIR to Clinical Oncology</h2>
+  <p>
+    In practice, making translational oncology data FAIR involves several interconnected steps.
+    At Roche, our team has focused on building <code>CDISC SDTM / ADaM</code>-compliant datasets
+    as a baseline — these regulatory standards provide a shared schema that is already widely
+    understood across the industry.
+  </p>
+  <p>
+    On top of that, we layer structured metadata using community ontologies: tumor types are
+    annotated with NCI Thesaurus codes, genes use HGNC symbols, and sample collection protocols
+    are described in enough detail to assess comparability across cohorts.
+  </p>
+  <p>
+    The payoff is real: when a new trial dataset lands in our warehouse, analysts can ask
+    cross-trial questions within days rather than months. Biomarker hypotheses that would have
+    required a bespoke data harmonisation project can be explored quickly.
+  </p>
+
+  <h2>The Road Ahead</h2>
+  <p>
+    FAIR is a journey, not a destination. Many organisations are still at the beginning —
+    with legacy datasets that predate any metadata standards and pipelines that were never
+    designed for reuse. Getting there requires both technical investment (ontology mapping,
+    metadata tooling, versioned data lakes) and cultural change (treating data documentation
+    as a first-class deliverable, not an afterthought).
+  </p>
+  <p>
+    But the direction is clear. As multi-modal datasets grow larger and machine learning
+    becomes more deeply embedded in translational workflows, the value of well-structured,
+    interoperable data will only increase.
+  </p>
+
+</div>
+
+<footer>
+  <p>Bhavesh Soni &nbsp;·&nbsp; bhaveshsoni.com &nbsp;·&nbsp; Built with plain HTML &amp; CSS</p>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
