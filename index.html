@@ -35,7 +35,7 @@
         </span>
         <span class="hero-meta-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-          <a href="mailto:bsoni08@gmail.com" style="color:inherit">bsoni08@gmail.com</a>
+          <span id="em" style="color:inherit"></span>
         </span>
         <span class="hero-meta-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
@@ -60,5 +60,12 @@
   </div>
 </footer>
 
+<script>
+(function(){
+  const u = 'bsoni08', d = ['gmail','com'].join('.');
+  const a = document.getElementById('em');
+  a.innerHTML = '<a href="mailto:'+u+'@'+d+'" style="color:inherit">'+u+'@'+d+'</a>';
+})();
+</script>
 </body>
 </html>
