@@ -83,6 +83,14 @@
       width: 100%; height: 100%; display: block;
     }
     .hero-inner { max-width: var(--maxw); margin: 0 auto; width: 100%; }
+    .hero-avatar {
+      width: 88px; height: 88px; border-radius: 50%; object-fit: cover;
+      display: block; margin-bottom: 26px;
+      border: 1px solid var(--teal-d);
+      box-shadow: 0 0 0 5px rgba(94,234,212,.06), 0 10px 30px rgba(0,0,0,.45);
+      opacity: 0; transform: translateY(12px);
+      animation: rise .9s .05s cubic-bezier(.2,.7,.2,1) forwards;
+    }
     .kicker {
       font-family: var(--mono); font-size: .74rem; letter-spacing: .22em;
       text-transform: uppercase; color: var(--teal);
@@ -270,6 +278,7 @@
 <section class="hero">
   <canvas id="field"></canvas>
   <div class="hero-inner">
+    <img class="hero-avatar" src="img/avatar.jpg" alt="Bhavesh Soni" width="88" height="88">
     <h1>
       <span class="ln"><span>Hi, I'm</span></span>
       <span class="ln"><span>Bhavesh.</span></span>
